@@ -1,0 +1,8 @@
+<launch>
+   <group ns="global_map">
+    <node pkg="map_server" name="map_server" type="map_server" args="$(find global_path)/maps/global_map.yaml"/>
+  </group>
+
+
+</launch>
+

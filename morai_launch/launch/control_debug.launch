@@ -1,0 +1,12 @@
+<launch>
+	<node pkg="morai_gps" type="gps.py" name="odometry"  output="screen" />
+
+  	<include file="$(find global_path)/launch/path.launch"/>
+
+	<!--<node pkg="morai_control" type="morai_control" name="control"  output="screen" />-->
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find morai_launch)/rviz/setting.rviz"/>
+
+
+</launch>
+

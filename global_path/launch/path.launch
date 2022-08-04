@@ -1,0 +1,12 @@
+<launch>
+   <group ns="global_map">
+    <node pkg="map_server" name="map_server" type="map_server" args="$(find global_path)/maps/global_map.yaml"/>
+  </group>
+
+  <node name="global_path" pkg="global_path" type="global_path" output="screen" 
+        respawn="true" />
+		<param name="UTM_OFFSET_X" type="double" value="302459.942" />
+		<param name="UTM_OFFSET_Y" type="double" value="4122635.537" />
+
+</launch>
+

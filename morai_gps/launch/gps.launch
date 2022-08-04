@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="morai_gps" type="gps.py" name="odometry"  output="screen" />
+
+</launch>

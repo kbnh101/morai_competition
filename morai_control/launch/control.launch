@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="morai_control" type="morai_control" name="control"  output="screen" />
+		<param name="max_lfd" type="double" value="3" />
+		<param name="min_lfd" type="double" value="1" />
+
+</launch>
